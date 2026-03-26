@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css">
+    <title>Younes Cherif | Web Developer</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Younes Cherif</h1>
+        <h2>Web Developer</h2>
+        <p>
+            Cybersecurity & Cloud student focused on building secure,
+            fast and modern web applications.
+        </p>
+        <a href="#" target="_blank" class="btn">DOWNLOAD CV</a>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I build modern, fast and secure websites using HTML, CSS, JavaScript and PHP.
+                My cybersecurity background helps me create reliable and performance-focused applications.
+            </p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+
+            <article class="skill">
+                <p>HTML</p>
+                <div class="bar">
+                    <div class="fill" data-width="90%"></div>
+                </div>
+            </article>
+
+            <article class="skill">
+                <p>CSS</p>
+                <div class="bar">
+                    <div class="fill" data-width="90%"></div>
+                </div>
+            </article>
+
+            <article class="skill">
+                <p>JavaScript</p>
+                <div class="bar">
+                    <div class="fill" data-width="85%"></div>
+                </div>
+            </article>
+
+            <article class="skill">
+                <p>React</p>
+                <div class="bar">
+                    <div class="fill" data-width="75%"></div>
+                </div>
+            </article>
+
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <section class="projects">
+
+                <article>
+                    <h3>MMA Club Website</h3>
+                    <p>
+                        Single-page website developed for an MMA club, focused on performance,
+                        SEO and clear content structure. Designed to attract new members and
+                        improve online visibility.
+                    </p>
+
+                    <p class="tech">HTML • CSS • JavaScript • SEO</p>
+
+                    <a href="https://tufdragons.be" target="_blank" class="btn">Live</a>
+                </article>
+
+                <article>
+                    <h3>Construction Company Website</h3>
+                    <p>
+                        Multi-page website for a window and door installation business.
+                        Includes a contact system, quote requests and a custom admin panel
+                        for managing client inquiries.
+                    </p>
+
+                    <p class="tech">HTML • CSS • JavaScript • PHP • MySQL</p>
+
+                    <a href="https://mavisions.be" target="_blank" class="btn">Live</a>
+                </article>
+
+                <article>
+                    <h3>Fitness App</h3>
+                    <p>Workout tracking web app (in progress).</p>
+                    <a href="#" target="_blank" class="btn outline">GitHub</a>
+                </article>
+
+            </section>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+
+            <div class="contact-links">
+
+                <a href="mailto:your@email.com" target="_blank" aria-label="Email">
+                    <!-- Email Icon -->
+                    <svg viewBox="0 0 24 24">
+                        <path d="M4 4h16v16H4z" fill="none" />
+                        <path d="M4 6l8 6 8-6" stroke="currentColor" stroke-width="2" fill="none" />
+                    </svg>
+                </a>
+
+                <a href="https://github.com/yourname" target="_blank" aria-label="GitHub">
+                    <!-- GitHub Icon -->
+                    <svg viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M12 .5A12 12 0 0 0 0 12.6c0 5.3 3.4 9.8 8.2 11.4.6.1.8-.3.8-.6v-2.3c-3.3.8-4-1.4-4-1.4-.6-1.6-1.4-2-1.4-2-1.1-.8.1-.8.1-.8 1.2.1 1.9 1.3 1.9 1.3 1.1 2 2.9 1.4 3.6 1.1.1-.8.4-1.4.7-1.7-2.7-.3-5.6-1.4-5.6-6.2 0-1.4.5-2.6 1.3-3.6-.1-.3-.6-1.6.1-3.3 0 0 1.1-.4 3.6 1.3a12.4 12.4 0 0 1 6.6 0c2.5-1.7 3.6-1.3 3.6-1.3.7 1.7.2 3 .1 3.3.8 1 1.3 2.2 1.3 3.6 0 4.8-2.9 5.9-5.7 6.2.5.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6A12 12 0 0 0 24 12.6 12 12 0 0 0 12 .5z" />
+                    </svg>
+                </a>
+
+                <a href="https://linkedin.com/in/yourname" target="_blank" aria-label="LinkedIn">
+                    <!-- LinkedIn Icon -->
+                    <svg viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M4.98 3.5C4.98 5 3.9 6 2.5 6S0 5 0 3.5 1.1 1 2.5 1 4.98 2 4.98 3.5zM.5 8h4V24h-4zM8 8h3.6v2.2h.1c.5-.9 1.8-1.9 3.7-1.9 4 0 4.7 2.6 4.7 6V24h-4v-7.2c0-1.7 0-3.9-2.4-3.9s-2.8 1.8-2.8 3.8V24H8z" />
+                    </svg>
+                </a>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Younes Cherif</p>
+    </footer>
+
+    <script>
+        const fills = document.querySelectorAll('.fill');
+        window.addEventListener('load', () => {
+            fills.forEach(el => {
+                el.style.width = el.dataset.width;
+            });
+        });
+    </script>
+
+</body>
+
+</html>
